@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
-EXPECTED_COLUMNS = ["age", "income", "score", "label"]
+EXPECTED_COLUMNS = ["age", "income",  "label"]
 
 def load_data(path: str) -> pd.DataFrame:
     """Load raw CSV and validate expected columns exist."""
